@@ -21,7 +21,7 @@ window.addEventListener('keypress', (e) => {
     if ('aesjpc'.includes(e.key)) {
       window.location.href = options[key.value]
     }
-  }, 300)
+  }, 100)
 })
 </script>
 
@@ -114,11 +114,6 @@ body {
   font-size: 22px;
 }
 
-strong {
-  /* color: #00ff66; */
-  color: #ffffff;
-  font-weight: 1000;
-}
 
 main {
   margin-top: 100px;
@@ -131,6 +126,7 @@ main {
   color: white;
   text-align: center;
   width: 50%;
+  padding-top: 60px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -156,7 +152,10 @@ main {
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 5px;
 }
-
+strong {
+  color: #ffffff;
+  font-weight: 8000;
+}
 .scroll {
   margin-top: 100px;
 }

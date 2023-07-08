@@ -1,85 +1,60 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
 import { ref } from 'vue'
-
+import Header from './components/Header.vue'
 const key = ref('')
-
 window.addEventListener('keypress', (e) => {
-  key.value = e.key
   let location = 'home'
-  let options = { a: 'about', a: 'about', e: 'education', s: 'skills', j: 'experience', p: 'projects', c: 'contact' }
+  let options = {
+    a: 'about',
+    a: 'about',
+    e: 'education',
+    s: 'skills',
+    j: 'experience',
+    p: 'projects',
+    c: 'contact'
+  }
+
+  if ('aesjpc'.includes(e.key)) {
+    key.value = e.key
+  }
   setTimeout(() => {
-    if ('aesjpc'.includes(key.value)) {
+    if ('aesjpc'.includes(e.key)) {
       window.location.href = options[key.value]
-    } else {
-      key.value = ''
     }
-  }, 100)
+  }, 300)
 })
 </script>
 
 <template @keyup="alert('keypress')">
-  <header>
-    <nav>
-      <RouterLink to="/" class="workspace">
-        <icon class="icon" icon="fa-solid fa-home" /> : Home
-      </RouterLink>
-      <RouterLink to="/about" class="workspace">
-        <icon class="icon" icon="fa-solid fa-home" /> : About
-      </RouterLink>
-      <RouterLink to="/education" class="workspace">
-        <icon class="icon" icon="fa-solid fa-list" /> : Eucation
-      </RouterLink>
-      <RouterLink to="/skills" class="workspace">
-        <icon class="icon" icon="fa-solid fa-snowboarding" /> : Skills
-      </RouterLink>
-      <RouterLink to="/jobs" class="workspace">
-        <icon class="icon" icon="fa-solid fa-wallet" /> : Job Experience
-      </RouterLink>
-      <RouterLink to="/projects" class="workspace">
-        <icon class="icon" icon="fa-solid fa-project-diagram" /> : Projects
-      </RouterLink>
-    </nav>
-  </header>
+  <Header />
   <main>
     <div class="main-container">
-      <h1 style="font-size: 26px">Richard Carrion - Backend Developer</h1>
-      <div>
-        <br />
+      <h1 style="font-size: 38px">Richard Carrion - Backend Developer</h1>
+      <div class="description">
         Experienced Backend Software Engineer skilled in designing and implementing robust systems.
-        <br />
-        Proficient in Python, Java, and frameworks like Django, Flask and Spring.
-        <br />
-        Knowledge in database management, API integration, and cloud computing.
-        <br />
-        <br />
-        <br />
+        <!-- <br /> -->
+        <!-- Proficient in Python, Java, and frameworks like Django, Flask and Spring. -->
+        <!-- <br /> -->
+        <!-- Knowledge in database management, API integration, and cloud computing. -->
       </div>
-      Let's create exceptional software solutions together.
-      <div class="options">
-        type <strong>a</strong> to see more <strong>about me</strong>
-        <br />
-        type <strong>e</strong> to look at my <strong>education</strong>
-        <br />
-        type <strong>s</strong> to see my <strong>skills</strong>
-        <br />
-        type <strong>j</strong> to see my <strong>job experience</strong>
-        <br />
-        type <strong>p</strong> to see my <strong>projects</strong>
-        <br />
-        type <strong>c</strong> to <strong>contact me</strong>
-        <br />
-        <br />
+      <p class="phrase">Let's create exceptional software solutions together.</p>
+      <div class="console">
+        <div>
+          <p class="help-item">type <strong>a</strong> to see more <strong>about me</strong></p>
+          <p class="help-item">type <strong>e</strong> to look at my <strong>education</strong></p>
+          <p class="help-item">type <strong>s</strong> to see my <strong>skills</strong></p>
+          <p class="help-item">type <strong>j</strong> to see my <strong>job experience</strong></p>
+          <p class="help-item">type <strong>p</strong> to see my <strong>projects</strong></p>
+          <p class="help-item">type <strong>c</strong> to <strong>contact me</strong></p>
+        </div>
         <div style="display: flex">
-          <div id="wrap">
-            carri@rcpc:~$ <span>{{ key }}</span>
+          <div class="prompt">
+            [carri@rcpc ~]$ <span>{{ key }}</span>
           </div>
         </div>
       </div>
 
-      <br />
-      <br />
-      or just scroll ...&nbsp;
+      <p class="scroll">or just scroll...&nbsp;</p>
     </div>
   </main>
 </template>
@@ -119,6 +94,7 @@ html {
   overflow-x: hidden;
   overflow-y: hidden;
 }
+
 body {
   text-align: center;
   display: table;
@@ -127,7 +103,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
 }
-#wrap {
+.prompt {
   box-sizing: border-box;
   display: table-cell;
   vertical-align: middle;
@@ -135,26 +111,20 @@ body {
 
 * {
   font-family: monospace;
-  font-size: 20px;
+  font-size: 22px;
 }
+
 strong {
+  /* color: #00ff66; */
+  color: #ffffff;
   font-weight: 1000;
 }
+
 main {
-  height: 90vh;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-header {
-  font-size: 14px !important;
-  background: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
-
-.code {
-  opacity: 0.2;
 }
 
 .main-container {
@@ -167,19 +137,27 @@ header {
   align-items: center;
 }
 
-.options {
-  margin-top: 30px;
-  width: 420px;
-  text-align: left;
+.description {
+  margin-top: 20px;
+  width: 600px;
+}
+.phrase {
+  margin-top: 60px;
 }
 
-.workspace {
-  font-size: 12px;
-  margin-right: 10px;
-  margin-left: 10px;
-  color: white;
+.console {
+  margin-top: 60px;
+  width: 420px;
+  text-align: left;
+  margin-bottom: 40px;
 }
-.icon {
-  font-size: 12px;
+
+.help-item {
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 5px;
+}
+
+.scroll {
+  margin-top: 100px;
 }
 </style>

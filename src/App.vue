@@ -157,6 +157,6 @@ strong {
   font-weight: 8000;
 }
 .scroll {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 </style>

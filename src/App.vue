@@ -25,7 +25,7 @@ window.addEventListener('keypress', (e) => {
   }
   setTimeout(() => {
     if ('aepc'.includes(e.key)) {
-      window.location.href = options[key.value[0]]
+      window.location.href = options[key.value][0]
     }
   }, 300)
 })
@@ -57,11 +57,23 @@ window.addEventListener('keypress', (e) => {
 
     <section id="about">
       <p>
-        Hey there! I'm Richard, a software engineer with a deep-rooted love for coding. My journey
-        into the world of programming started during my high school days when I made the bold
-        decision to switch schools and choose a technical major. Little did I know that this
-        decision would shape my entire career.
+        [carri@rcpc ~]$ Hey there! I'm Richard, a software engineer with a deep-rooted love for
+        coding. My journey into the world of programming started during my high school days when I
+        made the bold decision to switch schools and choose a technical major. Little did I know
+        that this decision would shape my entire career.
       </p>
+      <pre>
+          / ======= \
+         / __________\
+        | ___________ |
+        | | <a class="prompt-computer">$hello</a><span class="prompt-computer"></span> | |
+        | |         | |
+        | |_________| |________________________
+        \=____________/    richard carrion     )
+        / """"""""""" \                       /
+       / ::::::::::::: \                  =D-'
+      (_________________)
+    </pre>
     </section>
   </main>
 </template>
@@ -117,9 +129,6 @@ body {
   box-sizing: border-box;
   display: table-cell;
   vertical-align: middle;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 0;
   z-index: 1;
 }
 
@@ -164,10 +173,13 @@ main {
 }
 
 #about {
-  width: 50%;
+  display: flex;
+  width: 60%;
   color: white;
   height: 100vh;
   z-index: 2;
+  align-items: center;
+  justify-content: center;
 }
 
 .console {
@@ -190,7 +202,14 @@ strong {
   margin-bottom: 10vh;
 }
 
-.left-prompt{ 
+.left-prompt {
   width: 30% !important;
+}
+.ascii-art {
+  font-family: monospace;
+  white-space: pre;
+}
+.prompt-computer{
+  color: #4af626;
 }
 </style>

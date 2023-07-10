@@ -68,7 +68,7 @@ function selectItem(index) {
 }
 </script>
 <template>
-  <header class="sticky top-0 bg-black text-white py-3">
+  <header class="sticky top-0 bg-black text-white pt-3">
     <nav class="flex justify-between">
       <div class="flex">
         <NavItem

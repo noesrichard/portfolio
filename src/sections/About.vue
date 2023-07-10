@@ -17,7 +17,7 @@ import Prompt from '../components/Prompt.vue'
           / ======= \
          / __________\
         | ___________ |
-        | | <a >$hello</a><span  class="cursor"></span>  | |
+        | | <span class="text-console-green">$</span><span class="text-console-green">hello</span><span  class="cursor"></span>  | |
         | |         | |
         | |_________| |________________________
         \=____________/    richard carrion     )

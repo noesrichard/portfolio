@@ -42,9 +42,29 @@ const links = ref([
     label: 'LinkedIn'
   }
 ])
-console.log(0 == selected)
-function selectItem(index){ 
-  selected.value = index;
+
+const sections = document.getElementsByTagName('section')
+for (let i = 0; i < sections.length; i++) {
+  const section = sections[i]
+  console.log('scrollY: ', scrollY)
+  console.log('Section: ', section.getAttribute('id'))
+  console.log('offsetTop: ', section.offsetTop)
+}
+
+window.addEventListener('scroll', () => {
+  for (let i = 0; i < sections.length; i++) {
+    const section = sections[i]
+    console.log('scrollY: ', scrollY)
+    console.log('Section: ', section.getAttribute('id'))
+    console.log('offsetTop: ', section.offsetTop)
+    console.log('clientHeight: ', section.clientHeight)
+    if (scrollY >= section.offsetTop-400 && scrollY <= section.offsetTop+section.clientHeight) {
+      selected.value = i
+    }
+  }
+})
+function selectItem(index) {
+  selected.value = index
 }
 </script>
 <template>

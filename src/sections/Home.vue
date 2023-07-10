@@ -10,8 +10,8 @@ window.addEventListener('keypress', (e) => {
 
   const options = {
     a: ['#about', 'about me'],
-    e: ['#experience', 'job experience'],
-    p: ['#projects', 'my projects'],
+    e: ['#experience', 'experience'],
+    p: ['#projects', 'projects'],
     c: ['#contact', 'contact me']
   }
 
@@ -41,10 +41,10 @@ window.addEventListener('keypress', (e) => {
 
     <div class="w-3/4 mt-20">
       <div>
-        <HelpItem char="a" wim="about me" />
-        <HelpItem char="e" wim="job experience" />
-        <HelpItem char="p" wim="projects" />
-        <HelpItem char="c" wim="contact me" />
+        <HelpItem char="a" wywts="to see more" wim="about me" />
+        <HelpItem char="e" wywts="to look at my" wim="experience" />
+        <HelpItem char="p" wywts="to see my" wim="projects" />
+        <HelpItem char="c" wywts="to" wim="contact me" />
       </div>
 
       <Prompt :text="key" class="mt-5" />

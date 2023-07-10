@@ -10,8 +10,7 @@ import Prompt from '../components/Prompt.vue'
         Hey there! I'm Richard, a software engineer with a deep-rooted love for
         coding. My journey into the world of programming started during my high school days when I
         made the bold decision to switch schools and choose a technical major. Little did I know
-        that this decision would shape my entire career.
-        "
+        that this decision would shape my entire career."
       />
     </p>
     <pre class="w-2/4">

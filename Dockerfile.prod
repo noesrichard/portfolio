@@ -1,0 +1,13 @@
+FROM node:18-alpine as base
+WORKDIR /app
+COPY package.json .
+RUN npm install --verbose
+COPY . .
+RUN npm run build
+
+
+FROM nginx:alpine
+WORKDIR /usr/share/nginx/html
+RUN rm -f ./*
+COPY --from=base /app/dist .
+ENTRYPOINT ["nginx", "-g", "daemon off;"]

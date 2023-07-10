@@ -1,47 +1,27 @@
-<script setup></script>
+<script setup>
+import NavItem from '../components/NavItem.vue'
+</script>
 <template>
-  <header>
-    <nav>
-      <a href="/#" class="workspace"> <icon class="icon" icon="fa-solid fa-home" /> Home </a>
-      <a href="/#about" class="workspace">
-        <icon class="icon" icon="fa-solid fa-address-card" /> About
-      </a>
-      <a href="/#jobs" class="workspace">
-        <icon class="icon" icon="fa-solid fa-briefcase" /> Job Experience
-      </a>
-      <a href="/#projects" class="workspace">
-        <icon class="icon" icon="fa-solid fa-project-diagram" /> Projects
-      </a>
+  <header class="sticky top-0 flex justify-between bg-black text-white py-3">
+    <nav class="flex">
+      <NavItem link="#home" icon="fa-solid fa-home" label="Home" />
+      <NavItem link="#about" icon="fa-solid fa-address-card" label="About" />
+      <NavItem link="#jobs" icon="fa-solid fa-briefcase" label="Job Experience" />
+      <NavItem link="#projects" icon="fa-solid fa-project-diagram" label="Projects" />
     </nav>
-    <nav>
-      <a href="" class="workspace">
-        <icon class="icon" icon="fa-solid fa-envelope" /> Contact me
-      </a>
-      <a href="https://github.com/noesrichard" class="workspace">
-        <icon class="icon" icon="fa-brands fa-github" /> GitHub
-      </a>
-      <a href="https://www.linkedin.com/in/richard-carri%C3%B3n-a21a3b219/" class="workspace">
-        <icon class="icon" icon="fa-brands fa-linkedin" /> LinkedIn
-      </a>
+    <nav class="flex">
+      <NavItem link="" icon="fa-solid fa-envelope" label="Contact me" />
+      <NavItem link="https://github.com/noesrichard" icon="fa-brands fa-github" label="GitHub" />
+      <NavItem
+        link="https://www.linkedin.com/in/richard-carri%C3%B3n-a21a3b219/"
+        icon="fa-brands fa-linkedin"
+        label="LinkedIn"
+      />
     </nav>
   </header>
 </template>
 <style scoped>
-header {
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  font-size: 14px !important;
-  background: black;
-  padding-top: 10px;
-  padding-bottom: 10px;
-}
 
-.workspace {
-  margin-right: 10px;
-  margin-left: 10px;
-  color: white;
-}
 
 .icon {
   font-size: 18px;

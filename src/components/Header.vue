@@ -4,43 +4,15 @@ import NavItem from '../components/NavItem.vue'
 
 const selected = ref(0)
 const items = ref([
-  {
-    link: '#home',
-    icon: 'fa-solid fa-home',
-    label: 'Home'
-  },
-  {
-    link: '#about',
-    icon: 'fa-solid fa-address-card',
-    label: 'About'
-  },
-  {
-    link: '#jobs',
-    icon: 'fa-solid fa-briefcase',
-    label: 'Job Experience'
-  },
-  {
-    link: '#projects',
-    icon: 'fa-solid fa-project-diagram',
-    label: 'Projects'
-  }
+  { link: '#home', icon: 'fa-solid fa-home', label: 'Home' },
+  { link: '#about', icon: 'fa-solid fa-address-card', label: 'About' },
+  { link: '#experience', icon: 'fa-solid fa-briefcase', label: 'Job Experience' },
+  { link: '#projects', icon: 'fa-solid fa-project-diagram', label: 'Projects' }
 ])
 const links = ref([
-  {
-    link: '',
-    icon: 'fa-solid fa-envelope',
-    label: 'Contact me'
-  },
-  {
-    link: 'https://github.com/noesrichard',
-    icon: 'fa-brands fa-github',
-    label: 'GitHub'
-  },
-  {
-    link: 'https://www.linkedin.com/in/richard-carri%C3%B3n-a21a3b219/',
-    icon: 'fa-brands fa-linkedin',
-    label: 'LinkedIn'
-  }
+  { link: '', icon: 'fa-solid fa-envelope', label: 'Contact me' },
+  { link: 'https://github.com/noesrichard', icon: 'fa-brands fa-github', label: 'GitHub' },
+  { link: 'https://www.linkedin.com/in/richard-carri%C3%B3n-a21a3b219/', icon: 'fa-brands fa-linkedin', label: 'LinkedIn' }
 ])
 
 const sections = document.getElementsByTagName('section')
@@ -58,7 +30,7 @@ window.addEventListener('scroll', () => {
     console.log('Section: ', section.getAttribute('id'))
     console.log('offsetTop: ', section.offsetTop)
     console.log('clientHeight: ', section.clientHeight)
-    if (scrollY >= section.offsetTop-400 && scrollY <= section.offsetTop+section.clientHeight) {
+    if (scrollY >= section.offsetTop - 400 && scrollY <= section.offsetTop + section.clientHeight) {
       selected.value = i
     }
   }

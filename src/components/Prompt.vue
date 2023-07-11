@@ -1,13 +1,21 @@
 <script setup>
 const props = defineProps({
-  text: String
+  text: {
+    type: String,
+    default: null
+  },
+  cursor: {
+    type: Boolean,
+    default: true
+  }
 })
-
-
 </script>
 <template>
   <div>
-    [carri@rcpc ~]$ <span class="cursor">{{ text }}</span>
+    [carri@rcpc ~]$
+    {{ text != null ? text : '' }}
+    <span :class="cursor ? 'cursor' : ''"> </span>
+    <slot></slot>
   </div>
 </template>
 

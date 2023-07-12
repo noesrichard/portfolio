@@ -3,6 +3,7 @@ import Header from './components/Header.vue'
 import About from './sections/About.vue'
 import Home from './sections/Home.vue'
 import Experience from './sections/Experience.vue'
+import Projects from './sections/Projects.vue'
 
 </script>
 
@@ -12,6 +13,8 @@ import Experience from './sections/Experience.vue'
     <Home />
     <About />
     <Experience />
+    <Projects />
+
   </main>
 </template>
 

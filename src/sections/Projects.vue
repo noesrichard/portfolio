@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <section id="projects" class="flex items-center w-3/4 h-screen text-lg">
+  <section id="projects" class="flex items-center w-3/4 h-screen text-xl">
     <div class="h-3/4 w-full flex flex-col">
       <div id="sessions" class="h-1/6">
         <div class="text-white hover:text-white">(0) + portfolio: 2 windows (attached)</div>

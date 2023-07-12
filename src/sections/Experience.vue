@@ -3,7 +3,7 @@ import Tag from '../components/Tags.vue'
 </script>
 
 <template>
-  <section id="experience" class="flex items-center w-3/4 h-screen pl-1">
+  <section id="experience" class="flex items-center w-3/4 h-screen pl-1 text-xl">
     <div id="neovim" class="flex h-3/4">
       <div id="file-tree" class="text-xl w-1/3">
         <ul class="">

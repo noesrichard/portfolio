@@ -27,7 +27,7 @@ document.write(today)
 </script>
 
 <template>
-  <section id="about" class="flex items-center w-3/4 h-screen">
+  <section id="about" class="flex items-center w-3/4 h-screen text-xl">
     <div class="w-5/6 text-justify">
       <Prompt :cursor="false" class="opacity-70">
         Hey there! I'm Richard, a software engineer with a deep-rooted love for coding. My journey
@@ -38,7 +38,7 @@ document.write(today)
       <box-icon name="twitter"></box-icon>
       <Prompt :cursor="false" class="mt-10">
         <span>ls knowledge/technologies</span>
-        <div class="flex text-[20px] mt-2">
+        <div class="flex mt-2">
           <div id="data" class="flex flex-col">
             <div>
               <span class="opacity-70">drwxr-xr-x. 2 {{ today }}</span>

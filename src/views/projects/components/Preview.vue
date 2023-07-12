@@ -32,7 +32,7 @@ function showDescription() {
         </div>
         <div class="h-2/2 w-2/4 flex items-center justify-center">
           <div class="border-gray-500 border-[1px] border-solid p-2 w-5/6 h-fit">
-            <img :src="'src/assets/images/' + project.images[0]" class="w-fit"/>
+            <img :src="'src/assets/images/' + project.images[0]" class="w-fit saturate-0 hover:saturate-100 hover:scale-110 transition ease-in-out"/>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@ function showDescription() {
         </div>
       </div>
     </div>
-    <div id="windows" class="bg-green-400 flex text-black">
+    <div id="windows" class="bg-gray-600 flex text-black">
       <div
         class="hover:text-black hover:cursor-pointer hover:font-bold"
         :class="descriptionWindow ? 'text-black font-bold' : 'opacity-70'"

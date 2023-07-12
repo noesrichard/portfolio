@@ -25,4 +25,5 @@ import SectionTitle from '../../components/SectionTitle.vue'
       <ComputerASCII />
     </div>
   </section>
+
 </template>

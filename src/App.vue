@@ -4,6 +4,7 @@ import About from './views/about/About.vue'
 import Home from './views/home/Home.vue'
 import Experience from './views/experience/Experience.vue'
 import Projects from './views/projects/Projects.vue'
+import ContactMe from './components/ContactMe.vue'
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import Projects from './views/projects/Projects.vue'
     <About />
     <Experience />
     <Projects />
+
 
   </main>
 </template>

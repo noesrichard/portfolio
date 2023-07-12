@@ -1,39 +1,128 @@
 <script setup>
+import { ref } from 'vue'
 import Prompt from '../components/Prompt.vue'
+
+var today = new Date()
+var dd = String(today.getDate()).padStart(2, '0')
+var mm = String(today.getMonth()).padStart(2, '0') //January is 0!
+const monthNames = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+]
+const monthName = monthNames[today.getMonth()]
+
+today = monthName + ' ' + dd
+const date = ref(today)
+document.write(today)
 </script>
 
 <template>
   <section id="about" class="flex items-center w-3/4 h-screen">
-    <div class="w-2/4 text-justify">
-      <Prompt
-        text="
-        Hey there! I'm Richard, a software engineer with a deep-rooted love for
-        coding. My journey into the world of programming started during my high school days when I
-        made the bold decision to switch schools and choose a technical major. Little did I know
-        that this decision would shape my entire career."
-      />
+    <div class="w-5/6 text-justify">
+      <Prompt :cursor="false" class="opacity-70">
+        Hey there! I'm Richard, a software engineer with a deep-rooted love for coding. My journey
+        into the world of programming started during my high school days when I made the bold
+        decision to switch schools and choose a technical major. Little did I know that this
+        decision would shape my entire career.
+      </Prompt>
       <Prompt :cursor="false" class="mt-10">
         <span>ls knowledge/technologies</span>
-        <div class="text-console-green flex">
-          <div class="mr-5"><icon icon="fa-brands fa-react" />react</div>
-          <div class="mr-5"><icon icon="fa-brands fa-angular" />angular</div>
-          <div class="mr-5"><icon icon="fa-solid fa-leaf" />spring-boot</div>
-          <div class="mr-5"><icon icon="fa-solid fa-pepper-hot" />flask</div>
-          <div class="mr-5"><icon icon="fa-brands fa-linux" />linux</div>
+        <div class="flex text-[20px] mt-2">
+          <div id="data" class="flex flex-col">
+            <div>
+              <span class="opacity-70">drwxr-xr-x. 2 {{ today }}</span> <span class="text-green-500">Proficient</span>
+            </div>
+            <div>
+              <span class="opacity-70">drwxr-xr-x. 4 {{ today }}</span> <span class="text-green-500">Proficient</span>
+            </div>
+            <div>
+              <span class="opacity-70">drwxr-xr-x. 6 {{ today }}</span> <span class="text-green-500">Proficient</span>
+            </div>
+            <div>
+              <span class="opacity-70">drwxr-xr-x. 2 {{ today }}</span> <span class="text-orange-500">Competent</span>
+            </div>
+            <div>
+              <span class="opacity-70">drwxr-xr-x. 2 {{ today }}</span> <span class="text-orange-200">Advance Beginner</span>
+            </div>
+            <div>
+              <span class="opacity-70">drwxr-xr-x. 1 {{ today }}</span> <span class="text-red-500">Beginner</span>
+            </div>
+          </div>
+
+          <div id="what" class="ml-5">
+            <div >
+              <icon icon="fa-brands fa-react" class="text-blue-500" /> react
+            </div>
+            <div >
+              <icon icon="fa-brands fa-angular" class="text-red-500" /> angular
+            </div>
+            <div >
+              <icon icon="fa-solid fa-database" class="" /> SQL
+            </div>
+            <div >
+              <icon icon="fa-solid fa-pepper-hot" class="" /> flask
+            </div>
+            <div >
+              <icon icon="fa-solid fa-leaf" class="text-green-500" /> spring-boot
+            </div>
+            <div >
+              <icon icon="fa-brands fa-linux" /> linux
+            </div>
+          </div>
         </div>
       </Prompt>
     </div>
-    <pre class="w-2/4">
-          / ======= \
-         / __________\
-        | ___________ |
-        | | <span class="text-console-green">$</span><span class="text-console-green">hello</span><span  class="cursor"></span>  | |
-        | |         | |
-        | |_________| |________________________
-        \=____________/    richard carrion     )
-        / """"""""""" \                       /
-       / ::::::::::::: \                  =D-'
-      (_________________)
+    <pre class="w-3/6 text-sm -mt-40">
+      <!--     / ======= \ -->
+      <!--    / __________\ -->
+      <!--   | ___________ | -->
+      <!--   | | <span class="text-console-green">$</span><span class="text-console-green">hello</span><span  class="cursor"></span>  | | -->
+      <!--   | |         | | -->
+      <!--   | |_________| |________________________ -->
+      <!--   \=____________/    richard carrion     ) -->
+      <!--   / """"""""""" \                       / -->
+      <!--  / ::::::::::::: \                  =D-' -->
+      <!-- (_________________) -->
+                       .,,uod8B8bou,,.
+              ..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:.
+         ,=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||
+         !...:!TVBBBRPFT||||||||||!!^^""'   ||||
+         !.......:!?|||||!!^^""'            ||||
+         !.........||||                     ||||
+         !.........||||  <span class="text-console-green">$_</span>                 ||||
+         !.........||||                     ||||
+         !.........||||                     ||||
+         !.........||||                     ||||
+         !.........||||                     ||||
+         `.........||||                    ,||||
+          .;.......||||               _.-!!|||||
+   .,uodWBBBBb.....||||       _.-!!|||||||||!:'
+!YBBBBBBBBBBBBBBb..!|||:..-!!|||||||!iof68BBBBBb....
+!..YBBBBBBBBBBBBBBb!!||||||||!iof68BBBBBBRPFT?!::   `.
+!....YBBBBBBBBBBBBBBbaaitf68BBBBBBRPFT?!:::::::::     `.
+!......YBBBBBBBBBBBBBBBBBBBRPFT?!::::::;:!^"`;:::       `.
+!........YBBBBBBBBBBRPFT?!::::::::::^''...::::::;         iBBbo.
+`..........YBRPFT?!::::::::::::::::::::::::;iof68bo.      WBBBBbo.
+  `..........:::::::::::::::::::::::;iof688888888888b.     `YBBBP^'
+    `........::::::::::::::::;iof688888888888888888888b.     `
+      `......:::::::::;iof688888888888888888888888888888b.
+        `....:::;iof688888888888888888888888888888888899fT!
+          `..::!8888888888888888888888888888888899fT|!^"'
+            `' !!988888888888888888888888899fT|!^"'
+                `!!8888888888888888899fT|!^"'
+                  `!988888888899fT|!^"'
+                    `!9899fT|!^"'
+                      `!^"'
     </pre>
   </section>
 </template>

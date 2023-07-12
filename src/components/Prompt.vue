@@ -14,8 +14,8 @@ const props = defineProps({
   <div>
     [carri@rcpc ~]$
     {{ text != null ? text : '' }}
-    <span :class="cursor ? 'cursor' : ''"> </span>
     <slot></slot>
+    <span :class="cursor ? 'cursor' : ''"> </span>
   </div>
 </template>
 

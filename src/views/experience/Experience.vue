@@ -55,4 +55,3 @@ import Tag from '../../components/Tags.vue'
   </section>
 </template>
 
-<style scoped></style>

@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import NavItem from '../components/NavItem.vue'
+import NavbarItem from './NavbarItem.vue'
 
 const selected = ref(0)
 const items = ref([
@@ -43,7 +43,7 @@ function selectItem(index) {
   <header class="sticky top-0 bg-black text-white pt-3 z-10">
     <div class="flex justify-between">
       <div class="flex">
-        <NavItem
+        <NavbarItem
           v-for="(item, index) in items"
           :link="item.link"
           :icon="item.icon"
@@ -53,7 +53,7 @@ function selectItem(index) {
         />
       </div>
       <div class="flex">
-        <NavItem v-for="item in links" :link="item.link" :icon="item.icon" :label="item.label" />
+        <NavbarItem v-for="item in links" :link="item.link" :icon="item.icon" :label="item.label" />
       </div>
     </div>
   </header>

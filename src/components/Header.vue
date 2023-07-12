@@ -40,8 +40,8 @@ function selectItem(index) {
 }
 </script>
 <template>
-  <header class="sticky top-0 bg-black text-white pt-3">
-    <nav class="flex justify-between">
+  <header class="sticky top-0 bg-black text-white pt-3 z-10">
+    <div class="flex justify-between">
       <div class="flex">
         <NavItem
           v-for="(item, index) in items"
@@ -55,7 +55,7 @@ function selectItem(index) {
       <div class="flex">
         <NavItem v-for="item in links" :link="item.link" :icon="item.icon" :label="item.label" />
       </div>
-    </nav>
+    </div>
   </header>
 </template>
 <style scoped>

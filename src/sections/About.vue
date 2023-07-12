@@ -35,49 +35,50 @@ document.write(today)
         decision to switch schools and choose a technical major. Little did I know that this
         decision would shape my entire career.
       </Prompt>
+      <box-icon name="twitter"></box-icon>
       <Prompt :cursor="false" class="mt-10">
         <span>ls knowledge/technologies</span>
         <div class="flex text-[20px] mt-2">
           <div id="data" class="flex flex-col">
             <div>
-              <span class="opacity-70">drwxr-xr-x. 2 {{ today }}</span> <span class="text-green-500">Proficient</span>
+              <span class="opacity-70">drwxr-xr-x. 2 {{ today }}</span>
+              &nbsp;
+              <span class="text-green-500">Proficient</span>
             </div>
             <div>
-              <span class="opacity-70">drwxr-xr-x. 4 {{ today }}</span> <span class="text-green-500">Proficient</span>
+              <span class="opacity-70">drwxr-xr-x. 4 {{ today }}</span>
+              &nbsp;
+              <span class="text-green-500">Proficient</span>
             </div>
             <div>
-              <span class="opacity-70">drwxr-xr-x. 6 {{ today }}</span> <span class="text-green-500">Proficient</span>
+              <span class="opacity-70">drwxr-xr-x. 6 {{ today }}</span>
+              &nbsp;
+              <span class="text-green-500">Proficient</span>
             </div>
             <div>
-              <span class="opacity-70">drwxr-xr-x. 2 {{ today }}</span> <span class="text-orange-500">Competent</span>
+              <span class="opacity-70">drwxr-xr-x. 2 {{ today }}</span>
+              &nbsp;
+              <span class="text-orange-500">Competent</span>
             </div>
             <div>
-              <span class="opacity-70">drwxr-xr-x. 2 {{ today }}</span> <span class="text-orange-200">Advance Beginner</span>
+              <span class="opacity-70">drwxr-xr-x. 2 {{ today }}</span>
+              &nbsp;
+              <span class="text-orange-200">Advance Beginner</span>
             </div>
             <div>
-              <span class="opacity-70">drwxr-xr-x. 1 {{ today }}</span> <span class="text-red-500">Beginner</span>
+              <span class="opacity-70">drwxr-xr-x. 1 {{ today }}</span>
+              &nbsp;
+              <span class="text-red-500">Beginner</span>
             </div>
           </div>
 
           <div id="what" class="ml-5">
-            <div >
-              <icon icon="fa-brands fa-react" class="text-blue-500" /> react
-            </div>
-            <div >
-              <icon icon="fa-brands fa-angular" class="text-red-500" /> angular
-            </div>
-            <div >
-              <icon icon="fa-solid fa-database" class="" /> SQL
-            </div>
-            <div >
-              <icon icon="fa-solid fa-pepper-hot" class="" /> flask
-            </div>
-            <div >
-              <icon icon="fa-solid fa-leaf" class="text-green-500" /> spring-boot
-            </div>
-            <div >
-              <icon icon="fa-brands fa-linux" /> linux
-            </div>
+            <div><icon icon="fa-brands fa-react" class="text-blue-500" /> react</div>
+            <div><icon icon="fa-brands fa-angular" class="text-red-500" /> angular</div>
+            <div><icon icon="fa-solid fa-database" class="" /> SQL</div>
+            <div><icon icon="fa-solid fa-pepper-hot" class="" /> flask</div>
+            <div><icon icon="fa-solid fa-leaf" class="text-green-500" /> spring-boot</div>
+            <div><icon icon="fa-brands fa-linux" /> linux</div>
           </div>
         </div>
       </Prompt>

@@ -28,12 +28,23 @@ window.addEventListener('scroll', () => {
     }
   }
 })
+
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 function selectItem(index) {
   selected.value = index
 }
 </script>
 <template>
-  <header class="sticky top-0 bg-black text-white pt-3 z-10">
+  <header id="navbar" class="sticky top-0 bg-black text-white pt-3 z-10">
     <div class="flex justify-between">
       <div class="flex">
         <NavbarItem

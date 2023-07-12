@@ -1,10 +1,12 @@
 <script setup>
 import Tag from '../../components/Tags.vue'
+import SectionTitle from '../../components/SectionTitle.vue';
 </script>
 
 <template>
-  <section id="experience" class="flex items-center w-3/4 h-screen pl-1 text-xl">
-    <div id="neovim" class="flex h-3/4">
+  <section id="experience" class="flex flex-col justify-center items-center w-3/4 h-screen pl-1 text-xl">
+    <SectionTitle title="experience" />
+    <div id="neovim" class="flex h-3/4 mt-10">
       <div id="file-tree" class="text-xl w-1/3">
         <ul class="">
           <li class="flex p-2 hover:cursor-pointer">
@@ -19,7 +21,7 @@ import Tag from '../../components/Tags.vue'
           </li>
           <li class="flex opacity-40 hover:opacity-100 hover:cursor-pointer p-2">
             >
-            <icon icon="fa-solid fa-briefcase" class="mx-2 text-2xl"/>
+            <icon icon="fa-solid fa-briefcase" class="mx-2 text-2xl" />
             universidad-tecnica-ambato.work
           </li>
         </ul>
@@ -30,12 +32,15 @@ import Tag from '../../components/Tags.vue'
             <li class="opacity-30" v-for="n in 100">{{ n }}</li>
           </ul>
         </div>
-        <div class="pl-1 flex flex-col justify-center">
+        <div class="pl-5 flex flex-col justify-center">
           <Tag tag="company" text="Empresa Eléctrica Ambato Regional Centro Norte S. A. EEASA" />
           <Tag tag="position" text="Internship" />
           <Tag tag="what i did">
             <ul class="list-disc">
-              <li class="my-2">Development of a PWA web application in Angular for the management and monitoring of civil and electrical works within the distribution department.</li>
+              <li class="my-2">
+                Development of a PWA web application in Angular for the management and monitoring of
+                civil and electrical works within the distribution department.
+              </li>
               <li class="my-2">Development of RESTful APIs in Java.</li>
               <li class="my-2">Relational database management with Oracle Database.</li>
             </ul>
@@ -54,4 +59,3 @@ import Tag from '../../components/Tags.vue'
     </div>
   </section>
 </template>
-

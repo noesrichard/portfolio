@@ -21,7 +21,12 @@ import {
   faDatabase,
   faPepperHot,
   faLeaf,
-  faWind
+  faWind,
+  faChartArea,
+  faEye,
+  faLaptop,
+  faLaptopCode,
+  faServer
 } from '@fortawesome/free-solid-svg-icons'
 import { faAngular, faGithub, faJava, faLinkedin, faLinux, faReact } from '@fortawesome/free-brands-svg-icons'
 
@@ -46,7 +51,11 @@ library.add(
   faPepperHot,
   faLeaf,
   faLinux,
-  faWind
+  faWind, 
+  faChartArea,
+  faEye,
+  faLaptopCode,
+  faServer,
 )
 
 const app = createApp(App)

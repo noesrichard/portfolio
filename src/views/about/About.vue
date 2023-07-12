@@ -18,7 +18,7 @@ import SectionTitle from '../../components/SectionTitle.vue'
           decision would shape my entire career.
         </Prompt>
         <Prompt :cursor="false" class="mt-10">
-          <span>ls knowledge/technologies</span>
+          <span>list knowledge/technologies</span>
           <LsCommand />
         </Prompt>
       </div>

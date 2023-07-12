@@ -13,6 +13,7 @@ import Projects from './views/projects/Projects.vue'
     <About />
     <Experience />
     <Projects />
+
   </main>
 </template>
 

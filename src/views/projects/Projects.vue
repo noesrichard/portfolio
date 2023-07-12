@@ -19,13 +19,13 @@ function select(index) {
 </script>
 
 <template>
-  <section id="projects" class="flex items-center justify-center w-3/4 h-screen text-xl">
-    <div class="flex flex-col items-center justify-center w-11/12 text-xl">
+  <section id="projects" class="flex flex-col items-center justify-center w-3/4 h-screen text-xl">
+    <div class="flex flex-col items-center justify-center w-full text-xl h-3/4 -mb-20">
       <SectionTitle title="my projects" />
-      <div class="h-3/4 w-full flex flex-col justify-between mt-10">
-        <div id="sessions" class="h-fit">
+      <div class="w-full flex flex-col justify-between mt-10 z-10">
+        <div id="sessions" class="h-2/6">
           <div
-            class="hover:text-white hover:cursor-pointer mb-1 hover:bg-amber-200 hover:text-black"
+            class="hover:cursor-pointer mb-1 hover:bg-amber-200 hover:text-black"
             :class="isSelected(index) ? 'text-white' : 'text-gray-500'"
             v-for="(project, index) in projects"
             @click="select(index)"
@@ -34,52 +34,32 @@ function select(index) {
             {{ isSelected(index) ? '(attached)' : '' }}
           </div>
         </div>
-        <Preview :project="selectedProject" class="h-4/6" />
+        <Preview :project="selectedProject" class="h-4/6 " />
       </div>
     </div>
 
-    <!-- <div class="mr-10 w-1/12"> -->
-    <!--   <a -->
-    <!--     class="[writing-mode:vertical-lr] [text-orientation:mixed] hover:cursor-pointer hover:scale-125 bg-black transition ease-in-out" -->
-    <!--   > -->
-    <!--     <icon icon="fa-solid fa-envelope" class="ml-2 mb-5 rotate-90 mr-[5px]"></icon>email me -->
-    <!--   </a> -->
-    <!--   <hr class="h-full relative rotate-90 opacity-30 my-10 mr-20" /> -->
-    <!--   <a -->
-    <!--     href="https://github.com/noesrichard" -->
-    <!--     class="[writing-mode:vertical-lr] [text-orientation:mixed] hover:cursor-pointer hover:scale-125 bg-black transition ease-in-out" -->
-    <!--   > -->
-    <!--     <icon icon="fa-brands fa-github" class="ml-2 mb-5 rotate-90 mr-[5px]"></icon>GitHub -->
-    <!--   </a> -->
-    <!--   <hr class="h-full relative rotate-90 opacity-30 my-10 mr-20" /> -->
-    <!--   <a -->
-    <!--     href="https://www.linkedin.com/in/richard-carri%C3%B3n-a21a3b219/" -->
-    <!--     class="[writing-mode:vertical-lr] [text-orientation:mixed] hover:cursor-pointer hover:scale-125 bg-black transition ease-in-out" -->
-    <!--   > -->
-    <!--     <icon icon="fa-brands fa-linkedin" class="ml-2 mb-5 rotate-90 mr-[5px]"></icon>LinkedIn -->
-    <!--   </a> -->
-    <!-- </div> -->
+    <SectionTitle :start="true">
+      <div class="flex mt-40 z-0">
+        <a class="hover:scale-125 transition ease-in-out hover:cursor-pointer">
+          <icon icon="fa-solid fa-envelope" class="mr-2" />email me
+        </a>
+        <hr class="w-10 mt-[15px] mx-5 opacity-30" />
+        <a
+          href="https://github.com/noesrichard"
+          class="hover:scale-125 transition ease-in-out hover:cursor-pointer"
+        >
+          <icon icon="fa-brands fa-github" class="mr-2" />GitHub
+        </a>
+        <hr class="w-10 mt-[15px] mx-5 opacity-30" />
+        <a
+          href="https://www.linkedin.com/in/richard-carri%C3%B3n-a21a3b219/"
+          class="hover:scale-125 transition ease-in-out hover:cursor-pointer"
+        >
+          <icon icon="fa-brands fa-linkedin" class="mr-2" />LinkedIn
+        </a>
+      </div>
+    </SectionTitle>
   </section>
-
-  <!-- <div class="3/4 flex"> -->
-  <!--   <a class="hover:cursor-pointer hover:scale-125 bg-black transition ease-in-out"> -->
-  <!--     <icon icon="fa-solid fa-envelope" class=""></icon>email me -->
-  <!--   </a> -->
-  <!--   <hr class="w-1/3 opacity-30" /> -->
-  <!--   <a -->
-  <!--     href="https://github.com/noesrichard" -->
-  <!--     class="hover:cursor-pointer hover:scale-125 bg-black transition ease-in-out" -->
-  <!--   > -->
-  <!--     <icon icon="fa-brands fa-github" class="" />GitHub -->
-  <!--   </a> -->
-  <!--   <hr class="w-1/3 opacity-30" /> -->
-  <!--   <a -->
-  <!--     href="https://www.linkedin.com/in/richard-carri%C3%B3n-a21a3b219/" -->
-  <!--     class="hover:cursor-pointer hover:scale-125 bg-black transition ease-in-out w-[500px] bg-blue-50" -->
-  <!--   > -->
-  <!--     <icon icon="fa-brands fa-linkedin" class=""></icon>LinkedIn -->
-  <!--   </a> -->
-  <!-- </div> -->
 </template>
 
 <style scoped></style>

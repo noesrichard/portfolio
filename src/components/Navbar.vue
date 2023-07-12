@@ -18,18 +18,11 @@ const links = ref([
 const sections = document.getElementsByTagName('section')
 for (let i = 0; i < sections.length; i++) {
   const section = sections[i]
-  console.log('scrollY: ', scrollY)
-  console.log('Section: ', section.getAttribute('id'))
-  console.log('offsetTop: ', section.offsetTop)
 }
 
 window.addEventListener('scroll', () => {
   for (let i = 0; i < sections.length; i++) {
     const section = sections[i]
-    console.log('scrollY: ', scrollY)
-    console.log('Section: ', section.getAttribute('id'))
-    console.log('offsetTop: ', section.offsetTop)
-    console.log('clientHeight: ', section.clientHeight)
     if (scrollY >= section.offsetTop - 400 && scrollY <= section.offsetTop + section.clientHeight) {
       selected.value = i
     }

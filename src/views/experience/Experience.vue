@@ -1,5 +1,5 @@
 <script setup>
-import Tag from '../components/Tags.vue'
+import Tag from '../../components/Tags.vue'
 </script>
 
 <template>

@@ -1,9 +1,9 @@
 <script setup>
 import Header from './components/Header.vue'
-import About from './sections/About.vue'
-import Home from './sections/Home.vue'
-import Experience from './sections/Experience.vue'
-import Projects from './sections/Projects.vue'
+import About from './views/about/About.vue'
+import Home from './views/home/Home.vue'
+import Experience from './views/experience/Experience.vue'
+import Projects from './views/projects/Projects.vue'
 
 </script>
 

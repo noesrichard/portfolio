@@ -5,7 +5,7 @@
     <div class="h-3/4 w-full flex flex-col">
       <div id="sessions" class="h-1/6">
         <div class="text-white hover:text-white">(0) + portfolio: 2 windows (attached)</div>
-        <div class="text-gray-500 hover:text-white hover:cursor-pointer">(1) + reconocimiento de colores: 3 windows</div>
+        <div class="text-gray-500 hover:text-white hover:cursor-pointer">(1) + amorti: 3 windows</div>
         <div class="text-gray-500 hover:text-white hover:cursor-pointer">(2) + boton de panico movil: 2 windows</div>
       </div>
       <div class="h-5/6 flex flex-col justify-end">

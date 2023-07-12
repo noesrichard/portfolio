@@ -1,6 +1,6 @@
 <script setup>
 import { ref } from 'vue'
-import Prompt from '../components/Prompt.vue'
+import Prompt from '../../components/Prompt.vue'
 
 var today = new Date()
 var dd = String(today.getDate()).padStart(2, '0')

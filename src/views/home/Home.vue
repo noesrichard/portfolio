@@ -1,6 +1,6 @@
 <script setup>
-import Prompt from '../components/Prompt.vue'
-import HelpItem from '../components/HelpItem.vue'
+import Prompt from '../../components/Prompt.vue'
+import HelpItem from './components/HelpItem.vue'
 import { ref } from 'vue'
 
 const key = ref('')

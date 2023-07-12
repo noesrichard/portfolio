@@ -11,7 +11,7 @@ import SectionTitle from '../../components/SectionTitle.vue'
     <SectionTitle title="about me" />
     <div class="flex items-center">
       <div id="about-description" class="w-5/6 text-justify">
-        <Prompt :cursor="false" class="opacity-70">
+        <Prompt :cursor="false" class="opacity-80">
           Hey there! I'm Richard, a software engineer with a deep-rooted love for coding. My journey
           into the world of programming started during my high school days when I made the bold
           decision to switch schools and choose a technical major. Little did I know that this

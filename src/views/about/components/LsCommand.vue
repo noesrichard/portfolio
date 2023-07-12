@@ -61,6 +61,11 @@ const date = ref(today)
       &nbsp;
       <span class="text-red-500">Beginner</span>
     </div>
+    <div>
+      <span class="opacity-70">drwxr-xr-x. 1 {{ today }}</span>
+      &nbsp;
+      <span class="text-red-500">Beginner</span>
+    </div>
   </div>
 
   <div id="what" class="ml-5">
@@ -71,6 +76,7 @@ const date = ref(today)
     <div><icon icon="fa-solid fa-leaf" class="text-green-500" /> Spring Boot</div>
     <div><icon icon="fa-brands fa-linux" /> Linux</div>
     <div><icon icon="fa-solid fa-wind" class="text-blue-300" /> tailwindcss</div>
+    <div><icon icon="fa-brands fa-docker" class="text-blue-500" /> docker</div>
   </div>
     </div>
 </template>

@@ -7,7 +7,8 @@ const data = [
     techs: [
       { icon: 'fa-brands fa-angular', name: 'Angular', color: 'text-red-500' },
       { icon: 'fa-solid fa-server', name: 'json-server', color: 'text-grey-500' }
-    ]
+    ],
+    link: 'https://github.com/noesrichard/proyecto-economia'
   },
   {
     name: 'color-recognition',
@@ -18,7 +19,8 @@ const data = [
       { icon: 'fa-solid fa-chart-area', name: 'MATLAB', color: 'text-orange-500' },
       { icon: 'fa-solid fa-eye', name: 'Computer Vision', color: 'text-blue-500' },
       { icon: 'fa-solid fa-laptop-code', name: 'Machine Learning', color: 'text-grey-500' }
-    ]
+    ],
+    link: 'https://github.com/noesrichard/proyecto-inteligencia-artificial'
   },
 
   {
@@ -29,7 +31,8 @@ const data = [
     techs: [
       { icon: 'fa-brands fa-angular', name: 'Angular', color: 'text-red-500' },
       { icon: 'fa-solid fa-server', name: 'json-server', color: 'text-grey-500' }
-    ]
+    ],
+    link: 'https://github.com/noesrichard/proyecto-distribuidas'
   },
 
   {
@@ -40,7 +43,8 @@ const data = [
     techs: [
       { icon: 'fa-brands fa-angular', name: 'Angular', color: 'text-red-500' },
       { icon: 'fa-solid fa-server', name: 'json-server', color: 'text-grey-500' }
-    ]
+    ],
+    link: 'https://github.com/noesrichard/proyecto-agiles'
   },
 
   {
@@ -51,7 +55,8 @@ const data = [
     techs: [
       { icon: 'fa-brands fa-python', name: 'Python', color: 'text-green-500' },
       { icon: 'fa-solid fa-brain', name: 'A.I.', color: 'text-pink-500' }
-    ]
+    ],
+    link: 'https://github.com/noesrichard/8-puzzle'
   },
 
   {
@@ -62,7 +67,8 @@ const data = [
     techs: [
       { icon: 'fa-brands fa-python', name: 'Python', color: 'text-green-500' },
       { icon: 'fa-solid fa-brain', name: 'A.I.', color: 'text-pink-500' }
-    ]
+    ],
+    link: 'https://github.com/noesrichard/8-queens'
   }
 ]
 

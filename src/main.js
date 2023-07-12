@@ -27,9 +27,10 @@ import {
   faLaptop,
   faLaptopCode,
   faServer,
-  faBrain
+  faBrain,
+  faArrowUpRightFromSquare
 } from '@fortawesome/free-solid-svg-icons'
-import { faAngular, faGithub, faJava, faLinkedin, faLinux, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faAngular, faDocker, faGithub, faJava, faLinkedin, faLinux, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
   faUserSecret,
@@ -58,8 +59,9 @@ library.add(
   faLaptopCode,
   faServer,
   faPython,
-  faBrain
-
+  faBrain,
+  faDocker,
+  faArrowUpRightFromSquare
 )
 
 const app = createApp(App)

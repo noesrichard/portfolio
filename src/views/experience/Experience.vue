@@ -19,11 +19,11 @@ import SectionTitle from '../../components/SectionTitle.vue';
             />
             empresa-eléctrica-ambato.work
           </li>
-          <li class="flex opacity-40 hover:opacity-100 hover:cursor-pointer p-2">
-            >
-            <icon icon="fa-solid fa-briefcase" class="mx-2 text-2xl" />
-            universidad-tecnica-ambato.work
-          </li>
+          <!-- <li class="flex opacity-40 hover:opacity-100 hover:cursor-pointer p-2"> -->
+          <!--   > -->
+          <!--   <icon icon="fa-solid fa-briefcase" class="mx-2 text-2xl" /> -->
+          <!--   universidad-tecnica-ambato.work -->
+          <!-- </li> -->
         </ul>
       </div>
       <div id="file" class="flex w-2/3 overflow-y-hidden">

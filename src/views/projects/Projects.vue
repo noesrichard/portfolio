@@ -19,10 +19,10 @@ function select(index) {
 </script>
 
 <template>
-  <section id="projects" class="flex flex-col items-center justify-center w-3/4 h-screen text-xl">
-    <div class="flex flex-col items-center justify-center w-full text-xl h-3/4 -mb-20">
+  <section id="projects" class="flex flex-col items-center justify-center w-3/4 h-screen text-xl ">
+    <div class="flex flex-col items-center justify-center w-full text-xl h-3/4">
       <SectionTitle title="my projects" />
-      <div class="w-full flex flex-col justify-between mt-10 z-10">
+      <div class="w-full flex flex-col justify-between mt-10 z-10 h-full">
         <div id="sessions" class="h-2/6">
           <div
             class="hover:cursor-pointer mb-1 hover:bg-amber-200 hover:text-black"
@@ -37,28 +37,6 @@ function select(index) {
         <Preview :project="selectedProject" class="h-4/6 " />
       </div>
     </div>
-
-    <SectionTitle :start="true">
-      <div class="flex mt-40 z-0">
-        <a class="hover:scale-125 transition ease-in-out hover:cursor-pointer">
-          <icon icon="fa-solid fa-envelope" class="mr-2" />email me
-        </a>
-        <hr class="w-10 mt-[15px] mx-5 opacity-30" />
-        <a
-          href="https://github.com/noesrichard"
-          class="hover:scale-125 transition ease-in-out hover:cursor-pointer"
-        >
-          <icon icon="fa-brands fa-github" class="mr-2" />GitHub
-        </a>
-        <hr class="w-10 mt-[15px] mx-5 opacity-30" />
-        <a
-          href="https://www.linkedin.com/in/richard-carri%C3%B3n-a21a3b219/"
-          class="hover:scale-125 transition ease-in-out hover:cursor-pointer"
-        >
-          <icon icon="fa-brands fa-linkedin" class="mr-2" />LinkedIn
-        </a>
-      </div>
-    </SectionTitle>
   </section>
 </template>
 

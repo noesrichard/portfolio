@@ -75,7 +75,7 @@ window.onscroll = function () {
           <button
             id="send-button"
             type="button"
-            class="mt-3 w-full justify-center bg-black px-3 ml-2 py-2 text-sm font-semibold text-console-green shadow-sm ring-1 ring-inset ring-console-green hover:bg-black sm:mt-0 sm:w-auto hidden"
+            class="mt-3 w-full justify-center bg-black px-3 ml-2 py-2 text-base font-semibold text-console-green shadow-sm ring-1 ring-inset ring-console-green hover:bg-black sm:mt-0 sm:w-auto hidden hover:scale-110 transition ease-in-out duration-200"
           >
             Send
           </button>

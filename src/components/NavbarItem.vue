@@ -12,9 +12,7 @@ function navigate(){
 }
 </script>
 <template>
-  <div class="hover:bg-white hover:cursor-pointer h-8" :class="active ? 'bg-white' : 'bg-black'" @click="navigate()">
-    <div class="bg-black h-7">
+    <div class="bg-black h-7 hover:scale-110 hover:border-b-2 hover:border-b-white hover:px-3 transition ease-in-out hover:cursor-pointer duration-200 hover:mx-5" :class="active ? 'border-b-white border-b-2' : ''" @click="navigate()">
       <a class="mx-3 text-sm" > <icon class="icon" :icon="icon" /> {{ label }} </a>
     </div>
-  </div>
 </template>

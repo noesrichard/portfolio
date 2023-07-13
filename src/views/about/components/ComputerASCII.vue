@@ -1,5 +1,5 @@
 <template>
-  <pre class="w-3/6 text-sm mt-20">
+  <pre class="w-3/6 text-sm mt-20 -ml-20">
                        .,,uod8B8bou,,.
               ..,uod8BBBBBBBBBBBBBBBBRPFT?l!i:.
          ,=m8BBBBBBBBBBBBBBBRPFT?!||||||||||||||

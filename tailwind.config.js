@@ -26,7 +26,7 @@ module.exports = {
         }
       },
       animation: {
-        typing: 'typing 2s steps(100)',
+        typing: 'typing 1s steps(100)',
         typingInput: 'typing 500ms steps(100)',
         typingSubject: 'typing 800ms steps(100)'
       }

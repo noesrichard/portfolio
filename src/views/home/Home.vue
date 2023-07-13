@@ -12,21 +12,37 @@ window.addEventListener('keypress', (e) => {
     a: ['#about', 'about me'],
     e: ['#experience', 'experience'],
     p: ['#projects', 'projects'],
-    c: ['#contact', 'contact me']
+    c: ['#contact-me', 'contact me']
   }
 
-  if (e.key === 'h') {
-    window.location.href = '#home'
-  } else {
-    if (chars.includes(e.key)) {
-      key.value = options[e.key][1]
-    }
-    setTimeout(() => {
+  console.log(e)
+
+  if (scrollY > 650 && chars.includes(e.key)) {
+    window.location.href = options[e.key][0]
+  }
+
+  if (scrollY < 3000) {
+    if (e.key === 'h') {
+      window.location.href = '#home'
+    } else {
       if (chars.includes(e.key)) {
-        window.location.href = options[e.key][0]
-        key.value = ''
+        key.value = options[e.key][1]
+        document.getElementById('home-console').classList.add('animate-typing')
+        document.getElementById('cursor').classList.add('hidden')
+        document.getElementById('home-console').classList.remove('hidden')
+        document.getElementById('home-console').addEventListener('animationend', () => {
+          console.log(options[e.key][0])
+          window.location.href = options[e.key][0]
+        })
       }
-    }, 300)
+    }
+  }
+})
+window.addEventListener('scroll', () => {
+  if (scrollY < 650) {
+    document.getElementById('home-console').classList.remove('animate-typing')
+    document.getElementById('home-console').classList.add('hidden')
+    document.getElementById('cursor').classList.remove('hidden')
   }
 })
 </script>
@@ -47,10 +63,46 @@ window.addEventListener('keypress', (e) => {
         <HelpItem char="c" wywts="to" wim="contact me" />
       </div>
 
-      <Prompt :text="key" class="mt-5" />
+      <!-- <Prompt :text="key" class="mt-5" /> -->
+      <div id="projects-prompt" class="flex place-self-start mt-5">
+        <p>[carri@rcpc ~]$&nbsp;</p>
+        <div class="w-fit">
+          <p id="home-console" class="hidden overflow-hidden whitespace-nowrap pr-5 text-white">
+            cd '{{ key }}'
+          </p>
+        </div>
+        <span id="cursor" class="cursor"></span>
+      </div>
     </div>
     <p class="text-center mt-52">or just scroll...&nbsp;</p>
   </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+.cursor {
+  font-family: monospace;
+  font-size: 1em;
+}
+.cursor:after {
+  content: '_';
+  opacity: 0;
+  animation: cursor 1s infinite;
+}
+@keyframes cursor {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+</style>

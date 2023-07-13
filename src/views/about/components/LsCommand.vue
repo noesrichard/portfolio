@@ -76,7 +76,7 @@ const date = ref(today)
     <div><icon icon="fa-solid fa-leaf" class="text-green-500" /> Spring Boot</div>
     <div><icon icon="fa-brands fa-linux" /> Linux</div>
     <div><icon icon="fa-solid fa-wind" class="text-blue-300" /> tailwindcss</div>
-    <div><icon icon="fa-brands fa-docker" class="text-blue-500" /> docker</div>
+    <div><icon icon="fa-brands fa-docker" class="text-blue-500" /> Docker</div>
   </div>
     </div>
 </template>

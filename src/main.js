@@ -28,9 +28,11 @@ import {
   faLaptopCode,
   faServer,
   faBrain,
-  faArrowUpRightFromSquare
+  faArrowUpRightFromSquare,
+  faAtom,
+  faCheck
 } from '@fortawesome/free-solid-svg-icons'
-import { faAngular, faDocker, faGithub, faJava, faLinkedin, faLinux, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
+import { faAndroid, faAngular, faDocker, faGithub, faJava, faLinkedin, faLinux, faPython, faReact } from '@fortawesome/free-brands-svg-icons'
 
 library.add(
   faUserSecret,
@@ -61,6 +63,9 @@ library.add(
   faPython,
   faBrain,
   faDocker,
+  faAtom,
+  faAndroid,
+  faCheck,
   faArrowUpRightFromSquare
 )
 

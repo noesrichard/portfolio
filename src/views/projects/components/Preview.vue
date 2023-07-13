@@ -44,7 +44,7 @@ function showDescription() {
         <div class="h-full w-1/2 flex justify-center mb-2">
           <div class="border-gray-500 border-[1px] border-solid h-[300px] w-[640px] p-1">
             <img
-              :src="'src/assets/images/' + project.images[0]"
+              :src="project.images[0]"
               class="saturate-0 hover:saturate-100 hover:scale-110 transition ease-in-out w-full h-full"
             />
           </div>

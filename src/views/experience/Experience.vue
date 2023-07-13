@@ -63,7 +63,7 @@ window.addEventListener('scroll', () => {
               <li class="opacity-30" v-for="n in 100">{{ n }}</li>
             </ul>
           </div>
-          <div class="pl-5 flex flex-col justify-center">
+          <div class="pl-5 flex flex-col justify-center leading-relaxed">
             <Tag tag="company" text="Empresa Eléctrica Ambato Regional Centro Norte S. A. EEASA" />
             <Tag tag="position" text="Internship" />
             <Tag tag="what i did">

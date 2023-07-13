@@ -49,14 +49,16 @@ window.addEventListener('scroll', () => {
 
 <template>
   <section id="home" class="w-1/2 flex flex-col items-center justify-center h-screen mt-10">
-    <h1 class="text-center mb-5 text-4xl">Richard Carrión - Backend Developer</h1>
-    <div class="text-center mb-10 opacity-70">
-      Experienced Software Engineer skilled in designing and implementing robust systems.
+    <div class="w-5/6 text-justify px-4">
+      <h1 class="text-justify mb-5 text-4xl">Richard Carrión - Backend Developer</h1>
+      <div class="text-center mb-10 opacity-70">
+        Experienced Software Engineer skilled in designing and implementing robust systems.
+      </div>
+      <p class="text-center">Let's create exceptional software solutions together!</p>
     </div>
-    <p class="text-center">Let's create exceptional software solutions together!</p>
 
-    <div class="w-3/4 mt-20">
-      <div>
+    <div class="w-5/6 px-4 mt-20">
+      <div class="">
         <HelpItem char="a" wywts="to see more" wim="about me" />
         <HelpItem char="e" wywts="to look at my" wim="experience" />
         <HelpItem char="p" wywts="to see my" wim="projects" />

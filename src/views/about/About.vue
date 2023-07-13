@@ -34,7 +34,7 @@ window.addEventListener('scroll', () => {
   <section id="about" class="flex flex-col justify-center items-center w-3/4 h-screen text-xl">
     <SectionTitle title="about me" />
     <div class="grid grid-cols-3 w-full">
-      <div id="about-description" class="w-full text-start col-span-2 mt-32">
+      <div id="about-description" class="w-full text-start col-span-2 mt-24">
         <div class="flex">
           <p>[carri@rcpc ~]$&nbsp;</p>
           <div class="w-fit">
@@ -46,14 +46,15 @@ window.addEventListener('scroll', () => {
             </p>
           </div>
         </div>
-        <div class="opacity-80 hidden mt-1 w-[90%]" id="about-me-response">
-          Hey there! I'm Richard, a software engineer with a deep-rooted love for coding. My journey
+        <div class="opacity-80 hidden mt-1 w-[90%] leading-loose" id="about-me-response">
+          Hey there! I'm Richard,<br>
+          A software engineer with a deep-rooted love for coding. My journey
           into the world of programming started during my high school days when I made the bold
-          decision to switch schools and choose a technical major. Little did I know that this
-          decision would shape my entire career.
+          decision to switch schools and choose a technical major. <br>
+          Little did I know that this decision would shape my entire career.
         </div>
 
-        <div class="flex mt-10">
+        <div class="flex mt-20">
           <p id="knowledge-prompt" class="hidden">[carri@rcpc ~]$&nbsp;</p>
           <div class="w-fit">
             <p

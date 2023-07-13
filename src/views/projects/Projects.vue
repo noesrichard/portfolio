@@ -38,7 +38,7 @@ window.addEventListener('scroll', () => {
   <section id="projects" class="flex flex-col items-center justify-center w-3/4 h-screen text-xl">
     <div class="flex flex-col w-full text-xl h-3/4">
       <SectionTitle title="my projects" />
-      <div id="prompt-projects" class="flex place-self-start mt-5">
+      <div id="prompt-projects" class="flex place-self-start mt-10">
         <p>[carri@rcpc ~]$&nbsp;</p>
         <div class="w-fit">
           <p id="projects-console" class="hidden overflow-hidden whitespace-nowrap pr-5 text-white">

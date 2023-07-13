@@ -53,7 +53,7 @@ window.addEventListener('scroll', () => {
     <div class="text-center mb-10 opacity-70">
       Experienced Software Engineer skilled in designing and implementing robust systems.
     </div>
-    <p class="text-center">Let's create exceptional software solutions together.</p>
+    <p class="text-center">Let's create exceptional software solutions together!</p>
 
     <div class="w-3/4 mt-20">
       <div>

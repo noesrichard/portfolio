@@ -45,7 +45,7 @@ window.onscroll = function () {
                 id="console-contact-me"
                 class="hidden overflow-hidden whitespace-nowrap pr-5 text-white"
               >
-                Hello! Complete the form so I can write to you.
+                Hello! Complete the form so we can start working together :)
               </p>
             </div>
           </div>

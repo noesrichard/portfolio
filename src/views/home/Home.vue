@@ -33,7 +33,7 @@ window.addEventListener('keypress', (e) => {
 
 <template>
   <section id="home" class="w-1/2 flex flex-col items-center justify-center h-screen mt-10">
-    <h1 class="text-center mb-5 text-4xl">Richard Carrión - Full Stack Developer</h1>
+    <h1 class="text-center mb-5 text-4xl">Richard Carrión - Backend Developer</h1>
     <div class="text-center mb-10 opacity-70">
       Experienced Software Engineer skilled in designing and implementing robust systems.
     </div>
